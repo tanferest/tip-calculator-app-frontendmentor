@@ -1,10 +1,16 @@
 import '../styles/App.css';
 // Fichero src/components/App.js
+import Header from './Header';
+import Main from './Main';
 
-import {Route, Routes} from 'react-router-dom';
+
+
 
 const App = () => {
-  return <div>Hola mundo</div>;
+  return <>
+    <Header />
+    <Main />
+  </>;
 };
 
 export default App;
