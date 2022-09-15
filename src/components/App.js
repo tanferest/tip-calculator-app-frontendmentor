@@ -1,4 +1,4 @@
-import '../styles/App.css';
+import '../styles/App.scss';
 // Fichero src/components/App.js
 import Header from './Header';
 import Main from './Main';
