@@ -20,6 +20,9 @@
     &:focus {
       outline: 2px solid $strong-cyan;
     }
+    &:hover {
+      outline: 2px solid $light-grayish;
+    }
     &::placeholder {
       color: $grayish-cyan;
       font-size: 24px;
@@ -36,6 +39,10 @@
       height: 35px;
       padding-right: 15px;
       font-family: 'Space Mono';
+      &::placeholder {
+        font-size: 1.2rem;
+        color: $dark-grayish-cyan;
+      }
     }
   }
   &__tip {
@@ -55,7 +62,7 @@
       text-align: center;
       border-radius: 5px;
       &:hover {
-        background-color: hsla(172, 67%, 45%, 0.476);
+        background-color: $light-strong-cyan;
         color: $very-dark-cyan;
       }
     }
@@ -65,3 +72,17 @@
 input:checked + .fieldset__tip--option {
   background-color: $strong-cyan;
 }
+
+.number-ad {
+  color: rgb(218, 137, 16);
+  font-size: 0.75rem;
+  text-align: end;
+};
+
+.error:focus {
+  outline: 1px solid rgb(218, 137, 16);
+};
+
+.hidden {
+  display: none;
+};

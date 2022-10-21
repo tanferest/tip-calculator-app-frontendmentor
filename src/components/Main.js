@@ -4,10 +4,10 @@ import People from './People';
 import Total from './Total';
 import '../styles/Main.scss';
 
-function Main () {
+function Main (props) {
     return <section className='section-form'>
     <form className='form'>
-        <Bill />
+        <Bill handleBill={props.handleBill} hidden={props.hidden} error={props.error} billValue={props.billValue}/>
         <Tip />
         <People />
     </form>
